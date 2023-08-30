@@ -1,62 +1,223 @@
+:root{
+    --teal: #317773;
+    --lav: #E2D1F9;
+}
+
 *{
-    color: brown;
-    margin: 0;
+    color:var(--teal);
+    background-color: var(--lav);
+margin: 0px;
 }
 
 header{
-    background-color: rgb(22, 22, 97);
-    height: 60px;
+    background-color:var(--lav);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 #name{
     padding-left: 50px;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-bottom: 5px;
     margin-top: 10px;
     height: 30px;
-    background-color: rgb(184, 184, 68);
-    border-color: brown;
+    background-color: white;
+    border-color: var(--teal);
     border-style: solid;
 }
 
-#navbar{
+#navbar ul{
     display: flex;
     width: 450px;
     justify-content: space-evenly;
     margin-top: 15px;
     margin-right: 15px;
+    list-style: none;
+    font-size: 23px;
 }
 
-#navbar h2{
-    border-bottom: 3px solid brown;
-    height: 30px;
+a:hover{
+    background-color: bisque;
+    cursor: hand;
 }
 
-#hero{
+.fun img{
     height: 200px;
-    width: 100%
+    width: 200px;
+    border-radius: 10px;
 }
 
-#fun{
+.fun{
     position: relative;
     text-align: center;
     color: white;
+    height: 200px;
+    background-image: url("assets/pexels-fwstudio-129731.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 40px;
 }
 
 #image-text{
-    position: absolute;
-    top: 180px;
-    right: 200px;
-    background-color: rgb(184, 184, 68);
-    border-color: brown;
+    background-color:white;
+    border-color: var(--teal);
     border-style: solid;
-    width: 380px;
-    display: flex;
-    justify-content: space-around
-};
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
-body{
-    background-color: bisque;
+h3{
+    font-size: 25px;
+}
+
+#about-me{
+    font-size: 40px;
+    position: absolute;
+    margin-left: 100px;
+}
+
+#bio{
+    margin-top: 40px;
+    margin-left: 300px;
+    font-size: 20px;
+    border-left: 5px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+}
+
+#text{
+    padding: 10px;
+}
+
+#work{
+    font-size: 40px;
+    position: absolute;
+    margin-left: 100px;
+}
+
+#main{
+    margin-top: 20px;
+    margin-left: 300px;
+    border: 5px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+}
+
+article img{
+    width: 400px;
+    height: 230px;
+}
+
+article h3{
+    margin: 10px;
+}
+
+#primary img{
+    width: 840px;
+    height: 460px;
+}
+
+#main article{
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin: 20px;
+}
+
+#contact{
+    font-size: 40px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+#user ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-left: 300px;
+    font-size: 20px;
+    list-style: none;
+    border-left: 5px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#user li{
+    margin: 10px;
+    text-decoration: underline;
+}
+
+#resume{
+    font-size: 40px;
+    position: absolute;
+    margin-left: 100;
+}
+
+footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1200px){
+    #primary img{
+        width: 400px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #navbar ul{
+        display: block;
+        align-items: flex-end;
+        margin-left: 320px;
+        line-height: 2;
+        margin-top: -60px;
+    }
+    #about-me{
+        margin-top: -32px;
+    }
+    #bio{
+        padding: 0px;
+        margin-left: 0px;
+        border-left: 0px;
+        border-top: 5px;
+        border-style: solid;
+    }
+    #work{
+        margin-top:-32px;
+    }
+    #main{
+        margin-left: 0px;
+        margin-top: 50px;
+        border-left: 0px;
+        border-top: 5px;
+        border-style: solid;
+    }
+    #contact{
+        margin-top: -32px;
+    }
+    #user ul{
+        margin-left: 0px;
+        border-top: 5px;
+        margin-top: 50px;
+        border-left: 0px;
+        border-style: solid;
+        display: block;
+    }
 }
