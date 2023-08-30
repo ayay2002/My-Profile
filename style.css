@@ -20,7 +20,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+/* this is my name on top of the page*/
 #name{
     padding-left: 50px;
     padding-right: 10px;
@@ -31,7 +31,7 @@ header{
     border-color: var(--teal);
     border-style: solid;
 }
-
+/*this is my navbar extensions*/
 #navbar ul{
     display: flex;
     width: 450px;
@@ -46,13 +46,13 @@ header{
     background-color: bisque;
     cursor: hand;
 }
-
+/*this is my image of myself*/
 .fun img{
     height: 200px;
     width: 200px;
     border-radius: 10px;
 }
-
+/* this is my heading*/
 .fun{
     position: relative;
     text-align: center;
@@ -73,7 +73,7 @@ header{
     padding-left: 10px;
     padding-right: 10px;
 }
-
+/*these are all my project headings*/
 h3{
     font-size: 25px;
 }
@@ -83,7 +83,7 @@ h3{
     position: absolute;
     margin-left: 100px;
 }
-
+/*my bio on me*/
 #bio{
     margin-top: 40px;
     margin-left: 300px;
@@ -100,7 +100,7 @@ h3{
     position: absolute;
     margin-left: 100px;
 }
-
+/*these are all my projects*/
 #main{
     margin-top: 20px;
     margin-left: 300px;
@@ -138,7 +138,7 @@ article h3{
     margin-left: 80px;
     margin-top: 0px;
 }
-
+/*these are my ways of contact*/
 #user ul{
     display: flex;
     flex-wrap: wrap;
@@ -184,14 +184,14 @@ img:hover{
     opacity: 1;
     box-shadow: 0px 0px 0px 0px;
 }
-
+/*when screen gets tablet size the 1st project image will resize to the rest of the image sizes*/
 @media screen and (max-width:1200px){
     #primary img{
         width: 400px;
         height: 230px;
     }
 }
-
+/*when the screen reaches mobile size the collum aspect will delete, the navbar will become block, and the contact section will become block as well*/
 @media screen and (max-width:800px) {
     #navbar ul{
         display: block;
