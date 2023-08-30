@@ -6,7 +6,12 @@
 *{
     color:var(--teal);
     background-color: var(--lav);
-margin: 0px;
+    margin: 0px;
+}
+
+p{
+    padding: 10px;
+    text-indent: 3%;
 }
 
 header{
@@ -37,7 +42,7 @@ header{
     font-size: 23px;
 }
 
-a:hover{
+#navbar a:hover{
     background-color: bisque;
     cursor: hand;
 }
@@ -88,10 +93,6 @@ h3{
     border-top: 0px;
     border-bottom: 0px;
     border-style: solid;
-}
-
-#text{
-    padding: 10px;
 }
 
 #work{
@@ -175,9 +176,13 @@ footer{
 }
 
 img:hover{
-    border: 10px;
-    border-color:var(--teal);
-    opacity: .6;
+    box-shadow: 5px 5px 20px 5px var(--teal);
+    opacity: .8;
+}
+
+.fun img:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 0px 0px;
 }
 
 @media screen and (max-width:1200px){
