@@ -99,6 +99,10 @@ h3{
     position: absolute;
     margin-left: 100px;
 }
+
+#main img{
+    rotate: 20px;
+}
 /*these are all my projects*/
 #main{
     margin-top: 20px;
@@ -170,7 +174,6 @@ article h3{
 }
 
 footer{
-    display: table;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
